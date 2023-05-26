@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shoppingcart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css  " />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Web ban hang</title>
+</head>
+<body>
+    <div id="wrapper-1">
+        <div id="header">
+            <nav class="container">
+                    <a href="" id="logo">
+                        <img src="logo.png" alt="">
+                    </a>
+                    <ul id="main-menu">
+                            <li><a href="Home.html" >Trang chủ</a></li>
+                            <li><a href="DSSP.html">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Sách ngôn tình</a></li>
+                                <li><a href="">Sách khoa học</a></li>
+                                <li><a href="">Sách giáo khoa</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Toán</a></li>
+                                        <li><a href="">Ngữ Văn</a></li>
+                                        <li><a href="">Tiếng Anh</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Sách tiểu thuyết</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Trinh thám</a></li>
+                                        <li><a href="">Giả tưởng</a></li>
+                                        <li><a href="">Tình cảm</a></li>
+                                        <li><a href="">Lịch sử</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Sách văn hóa</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="form.html">Đăng nhập</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                    </ul>
+                    <div class="feature">
+                        <a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>   
+                        <a href="form.html"><i class="fa-solid fa-user"></i></a>
+                        <a href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>   
+                        <a href=""><i class="fa-sharp fa-solid fa-list"></i></a>
+                    </div>
+                    
+            </nav>
+          
+        </div>
+            
+    </div>
+    <div class="banner">
+    </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+          <thead>
+              <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Total</td>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
+                <td><a href=""><img src="p1-1.jpg" alt=""></a></td>
+                <td>7 thói quen để thành đạt</td>
+                <td>55.000 đ</td>
+                <td><input type="number" value="1"></td>
+                <td class="total-body">55.000 đ</td>
+              </tr>
+              <tr>
+                <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
+                <td><a href=""><img src="p2-1.jpg" alt=""></a></td>
+                <td>Những bài học cuộc sống</td>
+                <td>60.000 đ</td>
+                <td><input type="number" value="2"></td>
+                <td  class="total-body">120.000 đ</td>
+              </tr>
+              <tr>
+                <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
+                <td><a href=""><img src="p3-1.jpg" alt=""></a></td>
+                <td>Đời thay đổi khi chúng ta thay đổi</td>
+                <td>40.000 đ</td>
+                <td><input type="number" value="1"></td>
+                <td  class="total-body">40.000 đ</td>
+              </tr>
+              <tr>
+                <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
+                <td><a href=""><img src="p4-1.jpg" alt=""></a></td>
+                <td>Dám nghĩ lớn</td>
+                <td>70.000 đ</td>
+                <td><input type="number" value="4"></td>
+                <td  class="total-body">280.000 đ</td>
+              </tr>
+              <tr>
+                <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
+                <td><a href=""><img src="p5-1.jpg" alt=""></a></td>
+                <td>Nhà giả kim</td>
+                <td>110.000 đ</td>
+                <td><input type="number" value="2"></td>
+                <td  class="total-body">220.000 đ</td>
+              </tr>
+
+          </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter yours coupon">
+          <button class="normal">Apply</button>
+        </div>
+      </div>
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>55.000đ</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td><strong class="total-num" >55.000đ</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Proceed to checkout</button>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="col">
+
+          <img src="logo.png" alt="" width="200px" >
+          <h4>KHÔNG GIAN MUA TRỰC TUYẾN</h4>
+          <p><strong>Trụ sở:</strong> 654/77 Phan Huy Ích, P12, Quận Gò Vấp, TP Hồ Chí Minh</p>
+          <p><strong>VPGD:</strong> 142/06 Tân Hương, P6 ,Quận Tân Bình, TP.HCM</p>
+          <p><strong>Điện thoại:</strong> 0157234568</p>
+          <div class="follow">
+              <h4>THEO DÕI</h4>
+              <a href="#" ><i class="fa-brands fa-facebook" ></i></a>
+              <a href="#" ><i class="fa-brands fa-facebook-messenger"></i></a>
+              <a href="#" ><i class="fa-brands fa-google-play"></i></a>
+              <a href="#" ><i class="fa-brands fa-youtube"></i></a>
+          </div>
+      </div>
+      <div class="contact">
+          <h4>LIÊN HỆ</h4>
+          <a href=""><p>Sách mới phát hành</p></a>
+          <a href=""><p>Sự kiện sách nổi bật</p></a>
+          <a href=""><p>Cộng đồng yêu sách</p></a>
+          <a href=""><p>Bookspace đánh giá sách</p></a>
+      </div>
+      <div class="about">
+          <h4>VỀ CHÚNG TÔI</h4>
+          <a href=""><p>Giới thiệu chung</p></a>
+          <a href=""><p>Tin tức sự kiện</p></a>
+          <a href=""><p>Tuyển dụng</p></a>
+      </div>
+      
+      <div class="policy">
+          <h4>CHÍNH SÁCH, ĐIỀU KHOẢN</h4>
+          <p>Bảo mật thông tin 100%</p>
+          <p>Cam kết chính hãng</p>
+          <p>Giao hàng từ 3-5 ngày</p>
+          <p>Đổi trả trong vòng 30 ngày</p>
+      </div>
+    </div>
+</body>

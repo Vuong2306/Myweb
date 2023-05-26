@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body{
+    padding-top:63.13px ;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    color:#111;
+    line-height: 1.15;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto; 
+    opacity: 0.9;
+}
+#header{
+    padding:0px 0;
+    margin:0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top:0;
+    left:0;
+    background: #DDDDDD;
+}
+
+#main-men ul { /* Safari */
+    position:absolute;
+    top: 10px;
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    position: static;
+}
+#logo{
+    padding: 5px 0;
+}
+#logo img{
+    max-width: 130px;
+    height: auto;
+    border-radius: 2px;;
+}
+#main-menu{
+    display:flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+#main-menu li{
+    position: relative;
+    padding: 0x 20px;
+}
+#main-menu li a{
+    display: block;
+    text-decoration: none;
+    padding: 18px 20px;
+    color: black;
+    font-weight: 500;
+}
+#main-menu li a:hover{
+    background-color:crimson;
+    color:azure;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #cecccf;
+    padding: 0;
+    list-style: none;
+    width:150px;
+    border:1px solid rgb(189, 189, 189);
+    display: none;
+
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom:1px solid rgb(189, 189, 189);
+}
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+#main-menu ul.sub-menu li:hover a{
+    border-bottom:1px solid rgb(216, 215, 215);
+}
+#main-menu ul.sub-menu ul.sub-menu{
+    bottom:-69px;
+    left:150px; 
+    list-style: none;
+}
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+#main-menu >li>a{
+    position: relative;
+}
+#main-menu >li>a::before{
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    content: "";
+    height:5px;
+    background-color: yellow;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu >li:hover>a::before{
+    width:100%;
+} 
+#main-menu li>has-child::after{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:10px 0;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font: var(--fa-font-solid);
+    content: "\f1ea";   
+}
+
+.feature a i{
+    font-size: 20px;
+    padding: 15px 20px;
+    color:#000;
+    transition: all 0.5 ease;
+} 
+.feature a i:hover{
+    transform: scale(1.1);
+    color : red;
+}
